@@ -4,6 +4,7 @@ import { Eye, EyeSlash } from "@gravity-ui/icons";
 import { signIn } from "@/lib/auth-client";
 import { Button, Description, FieldError, Form, Input, InputGroup, Label, TextField } from "@heroui/react";
 import { useState } from "react";
+import Link from "next/link";
 
 
 
@@ -124,6 +125,10 @@ const SignInPage = () => {
           </Button>
         </div>
       </Form>
+      <p><span>Forgot Password? <Link 
+      className="text-blue-400 underline"
+      href="/forgot-password"
+      >Click here</Link></span></p>
     </div>
   );
 };
